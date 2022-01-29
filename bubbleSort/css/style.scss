@@ -1,0 +1,156 @@
+$no_algos: 6;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+nav
+{
+    background: linear-gradient(rgb(193, 98, 248),rgb(247, 202, 247));
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 10%;
+    padding: 0% 5%;
+    .array-inputs
+    {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        place-content: center;
+        padding: 5% 0%;
+        
+        #a_size
+        {
+            padding: 5% 0%;
+        }
+        #a_speed
+        {
+            padding: 5% 0%;
+        }
+        #a_generate
+        {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 6% 6%;
+            border-radius: 5px;
+            font-size: x-large;
+            margin-top: 37px;
+            &:hover
+            {
+                cursor: pointer;
+                background-color: rgb(0, 204, 255);
+                cursor: pointer;
+                color:blue;
+            }
+            &:focus{
+                background-color: white;
+                color:green;
+            }
+        }
+    }
+    .header_right
+    {
+        display: flex;
+        flex-direction: column;
+
+        .nav-heading
+        {
+            display: inline-block;
+            padding: 3% 0%;
+        }
+        .algos
+        {
+            display: flex;
+            button
+            {
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+                padding: .7rem .7rem;
+                margin-top: 85px;
+                margin-bottom: 34px;
+                margin-right: 23px;
+                border-radius: 5px;
+                font-size: x-large;
+                &:hover
+                {
+                    cursor: pointer;
+                    background-color: rgb(0, 204, 255);
+                    cursor: pointer;
+                    color:blue;
+                }
+                &:focus{
+                    background-color: white;
+                    color:green;
+                }
+            }
+
+            .butt_locked
+            {
+                background-color: transparent;
+                cursor: pointer;
+                &:hover
+                {
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            .butt_selected
+            {
+                background-color: white;
+                color:green;
+                &:hover
+                {
+                    background-color: white;
+                    cursor: pointer;
+                }
+            }
+            .butt_unselected
+            {
+                &:hover
+                {
+                    background-color: rgb(0, 204, 255);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+section
+{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    #Info_Cont1
+    {
+        padding: 20%;
+    }
+    #array_container
+    {
+        display: flex;
+        width: 100%;
+        height: 70vh;
+    }
+    #Info_Cont2
+    {
+        padding: 20%;
+    }
+}
+
+.hide
+{
+    display: none;
+}
+
+.heading{
+    font-size: xx-large;
+    margin-top:34px;
+}
+

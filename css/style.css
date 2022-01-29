@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
 .carousel-control-prev-icon {
     width: 40px;
     height: 40px;
@@ -9,3 +15,20 @@
     height: 40px;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23c593d8' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
+.demoButton{
+  background-color: #8BDB59;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.demoButton:focus{
+    background-color: orange;
+}
+
