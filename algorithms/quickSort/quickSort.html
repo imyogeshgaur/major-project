@@ -9,19 +9,26 @@
 <body>
 
     <header>
-        <nav>
+        <nav id="navigation">
             <div class="array-inputs">
                 <p>Size of the array:</p>
                 <input id="a_size" type="range" min=20 max=150 step=1 value=80>
                 <p>Speed of the algorithm:</p>
                 <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
-                <button id="a_generate">Generate Array</button>
+                <button id="a_generate" class="button1">Generate Array</button>
             </div>
 
             <div class="header_right">
-                <h1 class="heading">Quick Sort Visualization</h1>
+                <div class="container">
+                    <h1 class="heading">Quick Sort Visualization</h1>
+                <label class="switch">
+                    <input type="checkbox" id="toggler">
+                    <span class="slider round"></span>
+                </label>
+                <label for="dark" id="darkOrLight">Dark Mode</label>
+                </div>
                 <div class="algos">
-                    <button>Start</button>
+                    <button id="button">Start</button>
                 </div>
             </div>
 
@@ -51,5 +58,6 @@
     <script src="./js/main.js"></script>  
     <script src="./js/visualizations.js"></script> 
     <script src="./js/quick_sort.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
 </html>
